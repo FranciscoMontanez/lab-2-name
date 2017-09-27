@@ -31,7 +31,7 @@ char* disemvoweler(char* str) {
   newnovowels = (char*)calloc(nonvowels + 1, sizeof(char));
 
   for (int i = 0; i != '\0' &&  i < length; i++) {
-    if (notvowel(str[i]) {
+    if (notvowel(str[i])) {
 	newnovowels[j] = str[i];
 	j++;
       }
