@@ -21,7 +21,7 @@ char* disemvoweler(char* str) {
   char* newnovowels;
 
 // all nonvowels will be counted to have size of new string
-  for (int i = 0; i < length; i++) {
+  for (int i = 0; i != '\0' && i < length; i++) {
     if(notvowel(str[i])) {
       nonvowels++;
     }
@@ -37,8 +37,8 @@ char* disemvoweler(char* str) {
       }
   }
   free(str);
-  newnovowel[j]='\0';
-  return newnonvowel;
+  newnovowels[j]='\0';
+  return newnovowels;
 }
 
 //disemvowels strings; main function
